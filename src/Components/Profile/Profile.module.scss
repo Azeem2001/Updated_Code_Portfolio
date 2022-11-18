@@ -1,0 +1,22 @@
+.LeftSide{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+    img{
+      height:calc(92vh + 13px);  
+      width: 100%;     
+    }
+   }
+   
+
+  @media only screen and (max-width:1200px){
+    
+      .LeftSide{
+         img{
+            display: none;
+         }
+      }
+
+  }       
+   

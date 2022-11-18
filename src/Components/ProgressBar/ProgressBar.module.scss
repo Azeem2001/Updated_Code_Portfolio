@@ -1,0 +1,71 @@
+.animation_bar_1{
+   
+        position: relative;
+        display: block;
+       width: 80%;
+        font-size: 16px;
+        line-height: 16px;
+        background: rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+       
+         span {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            vertical-align: middle;
+            height: 40px;
+            overflow: hidden;
+            background-size: 100%;
+            
+        }
+        
+         span:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+;
+            background: -webkit-linear-gradient(45deg, #474f7e 25%, transparent 25%, transparent 50%, #474f7e 50%, #474f7e 75%, transparent 75%, transparent);
+            background-size: 35px 35px;
+            opacity: 0.3;
+            
+        }
+        @-webkit-keyframes animation_bar_1 {
+            0% {
+                width: 20% !important;
+            }
+            50% {
+                width: 80% !important;
+            }
+            100% {
+                width: 20%;
+            }
+        }
+        
+        @-webkit-keyframes animation_bar_1_after {
+            0% {
+                background-position: 0 100%;
+            }
+            100% {
+                background-position: 30px 100%;
+            }
+        }
+        
+}
+@media only screen and (max-width:768px) {
+    .animation_bar_1{
+   
+       
+         span {
+            height: 20px;
+        }
+        
+         span:after {
+          
+            background-size: 28px 28px;
+            opacity: 0.3;
+        }
+    }
+}

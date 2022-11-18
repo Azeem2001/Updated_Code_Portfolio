@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+.CustomButton{
+        
+    Button svg{
+        fill: rgb(202, 198, 198);
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+    }
+    Button{
+        font-family: "lato",sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 45px;
+        border-color: #FFF;
+        color: #FFF;      
+         
+        font-size: 16px; 
+        font-weight: 700; 
+        background: transparent;
+        border-radius: 5px ;  
+        
+        span{
+            color: aqua;
+            padding-left: 0.3rem;
+        }
+       
+    }
+}

@@ -1,0 +1,157 @@
+.CardContainer{
+    .Buttons{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1rem;
+
+        button{
+            padding: 1rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            background: transparent;
+            color: #ffff;
+            border: none;
+        
+         &:focus{
+          border: 1px solid #ffff;
+         }
+        }
+                
+    }
+    @media only screen and (max-width: 900px) {
+        .Buttons{
+            width: 100%;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .Buttons{
+            width: 100%;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+    
+            button{
+                padding: 1rem;
+                font-size: 1rem;
+                border-radius: 8px;
+                background: transparent;
+                color: #ffff;
+                border: none;
+            
+             &:focus{
+              border: 1px solid #ffff;
+             }
+            }
+                    
+        }
+    }
+    .Images{
+      
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        z-index: 0; 
+       
+      .imgs{
+        width: 100%;
+        display: flex;
+        .ViewStory{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            
+            .btnWrapper{
+
+                display: flex;
+                justify-content: flex-end;
+                align-items:flex-end ;
+                width: 100%;
+                button{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    margin-top: 1rem;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    background: transparent;
+                    color: #FFF;
+                    padding: 0.5rem 1rem;
+                    border:1px solid #FFF;
+                    border-radius: 5px;
+
+                    &:hover{
+                        background: rgba(0,0,0,0.5);
+                    }
+
+                   span{
+                        color: aqua;
+                        padding-left: 0.4rem;
+                    }
+    
+                }
+            }
+            
+            small{
+                font-size: 1.4rem !important;
+                font-weight: bold;
+                width: 100%;
+                text-align: left;
+                padding-bottom: 2rem;
+                padding-right: 1rem;
+                color: aqua;
+               
+            }
+            @media only screen and (max-width: 600px) {
+                button{
+                 font-size: 1rem !important;
+                }
+              small{
+                font-size: 1rem !important;
+              }
+            }
+        }
+      }
+     
+        
+    }
+    @media only screen and (max-width: 900px) {
+      .Images{
+          width: 100%;
+          display: block;
+          .imgs{
+            padding: 0.2rem;
+            margin-bottom:1rem;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+
+            &:focus{
+                border: 10px solid #ffff;
+                border-radius:8px ;
+              }
+            
+           
+      }
+    }
+}
+
+.ReactModal__Content{
+    .viewMore{
+        width: auto;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        img{
+            width: 63% !important;
+        }
+    }
+}
+
+
+}
+

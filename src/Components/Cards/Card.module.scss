@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+.CardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 45.7vh;
+   width: 100%;
+   overflow: hidden;
+   background: #333333;
+   font-family: 'Lato', sans-serif;
+   &:hover{
+    h1{
+        color: #FFB400 !important;
+        transition: 1s ease-in-out;
+        span{
+            color: #fff;
+            transition: 1s ease-in-out;
+
+        }
+    }
+   
+}
+   h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    
+
+    span{
+        color: #FFB400;
+     font-size: 2.5rem;
+     font-weight: 900;
+
+    }
+   }
+}
+@media only screen and (max-width: 1025px){
+    .CardContainer{
+        height: 42.7vh;
+        width: 100%;
+
+        
+       
+       h1{
+        font-size: 2.5rem;
+        font-weight: 900;
+        cursor: pointer;
+        
+    
+        span{
+            color: #FFB400;
+         font-size: 2.5rem;
+         font-weight: 900;
+    
+        }
+       }
+    }
+   
+
+}
+@media only screen and (max-width: 768px){
+    .CardContainer{
+          height: 40vh;
+       
+       h1{
+        font-size: 1.5rem;
+        
+    
+        span{
+         font-size: 1.5rem;
+    
+        }
+       }
+    }
+   
+
+}

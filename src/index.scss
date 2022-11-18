@@ -1,0 +1,159 @@
+body{
+    background-color: #222222;
+    scrollbar-gutter: none;
+    overflow:hidden ;
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  ._3qw0K {
+    height: 100% !important;
+  }
+  ._1Lxpd{
+    width: 100% !important;
+    height: inherit;
+  }
+  ._5bXm4{
+    left: 54% !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .overlay{
+    position: relative !important;
+    padding: 0 !important;
+    padding-bottom: 2rem !important;
+  }
+  .no-com {
+    background-color: aqua !important;
+  }
+  .example-div {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+  }
+  .example-row {
+    display: flex;
+    width: 100;
+  }
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 20px;
+  }
+  .head-title {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  .ReactModal__Overlay{
+    background-color: rgba(0,0,0,0.8) !important;
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    .example-row {
+      display: flex;
+      width: 100;
+      flex-direction: column;
+    }
+    .ReactModal__Content{
+     width: auto !important;
+     top:50% !important;
+     padding: 0 !important;
+     .viewMore{
+      
+      h1{
+      font-size: 1rem !important;
+      padding-top: 1rem;
+
+      }
+      p{
+        text-align: justify;
+      }
+    }
+    }
+  }
+  .ReactModal__Overlay{
+    min-height:calc(100vh - 20rem) !important;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .ReactModal__Content{
+      overflow: hidden;
+      overflow-y: none;
+    .viewMore{
+     width: 90%;
+     margin-top: 2rem !important;
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     
+     .cancelIcon{
+      position: absolute;
+      top: 1rem;
+      right: 0.5rem;
+      button svg{
+        fill : rgba(0,0,0,0.7);
+
+        font-size: 2.5rem;
+    }
+    button{
+        border-radius: 50%;
+        background-color: transparent;
+        
+        border: none;
+        
+    }
+     }
+
+     h1{
+      font-size: 1.8rem ;
+      font-weight: 700;
+      font-family: sans-serif;
+      color: #474f7e;
+      padding-bottom: 1rem;
+      border-bottom:2px solid;
+         }
+        
+         ul{
+          padding-left: 0;
+          li{
+            list-style: none;
+
+            color: #212459;
+            font-weight: 500;
+            font-family: sans-serif;
+            line-height: 1.5rem;
+
+            strong{
+              font-family: sans-serif;
+              font-weight: 700;
+              color:#000;
+              padding-right: 0.5rem;
+            }
+          }
+         
+         }
+         p{
+          font-size: 1.1rem !important;
+          color: #212459;
+          line-height: 1.5rem;
+          font-weight: 300;
+          font-family: sans-serif;
+        }
+    .project_img{
+    width: 100% !important;
+}}}}
+
+

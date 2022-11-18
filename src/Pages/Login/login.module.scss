@@ -1,0 +1,65 @@
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.LoginContainer{
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+    height:calc(100vh - 20rem);
+    .container{
+        border: 1px solid;
+        width:50%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #111112;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        border-radius: 8px;
+
+        padding: 2rem;
+
+        .btnContainer{
+          display: flex;
+          width: 100%;
+          justify-content: space-around;
+          align-items: center;
+          gap: 1rem;
+
+
+        }
+        @media only  screen and (max-width:768px) {
+          .btnContainer{
+            flex-direction: column;
+            gap: 1rem;
+          }
+        }
+        input{
+            width: 100%;
+            background-color: grey;
+            color: #fff;
+            border: none;
+            font-size: 1rem;
+            padding: 1rem 1rem;
+            cursor: pointer;
+            outline: none;
+            border-radius: 8px;
+
+           
+          
+          &:focus{
+            outline: none;
+            border: none;
+          }
+          &::placeholder{
+            color: #ffffffff;
+          }
+        }
+
+    }
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+.ServiceCard{
+    border: 1px solid #363B5F;
+    border-radius: 5px;
+    // height: 25vh;
+    font-family: "lato" sans-serif;
+
+    .text{
+        width: 100%;
+      
+        height: 5vh;
+        color: #00F7EF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2C3051;
+        h4{
+            letter-spacing: 2px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+      
+        
+    }
+    .content{
+        color: #ffff ;
+        padding: 1rem;
+        p svg{
+            fill: #00F7EF ;              
+        }      
+        p{
+            strong{
+                vertical-align:top;
+                padding-left: 0.5rem;
+                // padding-bottom: 1rem;
+            }
+        }
+        h5{
+            font-size: 1.1rem;
+            word-spacing: 8px;
+            line-height: 1.5rem;
+            font-weight: 400;
+            color: #A89E8E;
+        }
+   
+    }
+}
+@media only screen and (max-width:768px) {
+    .ServiceCard{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;      
+
+  }
+}

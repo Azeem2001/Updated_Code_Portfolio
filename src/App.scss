@@ -1,0 +1,34 @@
+.fixed{
+    // position: fixed;
+   margin-top: 1rem;
+    // width: 32%;
+    
+}
+// .overflow{
+//   overflow: hidden;
+// }
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
+    background: #fff !important;
+    border-radius: 5px !important;
+    padding: 1rem !important;
+  }
+  .MuiFormControl-root{
+    margin: 1rem !important;
+  }
+  .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+    border-color: #66697E !important;
+    color: #FFFFFF !important;
+
+  }
+  .MuiInputLabel-outlined{
+    color: #66697E !important;
+  }
+  @media only screen and (max-width:768px) {
+    .MuiGrid-item{
+        padding-top: 0 !important;
+    }
+    .fixed{
+   
+     margin-top: 1rem;   
+  }
+  }
