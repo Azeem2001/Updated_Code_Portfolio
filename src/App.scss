@@ -4,9 +4,11 @@
     // width: 32%;
     
 }
-// .overflow{
-//   overflow: hidden;
-// }
+.overflow{
+ min-height: 95vh;
+ height: 100%;
+ overflow-y: auto;
+}
 .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
     background: #fff !important;
     border-radius: 5px !important;

@@ -14,7 +14,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import ServiceCard from "../../Components/ServiceCard/ServiceCard";
 import CancelIcon from "@mui/icons-material/Cancel";
 import { useNavigate } from "react-router-dom";
-
+import { FaTiktok, FaYoutube, FaDiscord } from "react-icons/fa";
 const About = () => {
   const women1 = "./images/woman.jpg";
   const navigate = useNavigate();
@@ -74,30 +74,15 @@ const About = () => {
                         </p>
                         <p>
                           <KeyboardDoubleArrowRightIcon />
-                          <strong>Date of Birth - </strong>
-                          <span>08 June 1992</span>
-                        </p>
-                        <p>
-                          <KeyboardDoubleArrowRightIcon />
-                          <strong>Nationality - </strong>
-                          <span>United States</span>
+                          <strong>Disabilty - </strong>
+                          <span>Deaf</span>
                         </p>
                       </div>
                       <div className={styled.InfoRight}>
                         <p>
                           <KeyboardDoubleArrowRightIcon />
-                          <strong>Phone - </strong>
-                          <span>+76 21 19 34 20</span>
-                        </p>
-                        <p>
-                          <KeyboardDoubleArrowRightIcon />
-                          <strong>Email - </strong>
-                          <span>you@yourwebsite.com</span>
-                        </p>
-                        <p>
-                          <KeyboardDoubleArrowRightIcon />
-                          <strong>Disabilty - </strong>
-                          <span>Deaf</span>
+                          <strong>Location - </strong>
+                          <span>Wales United Kingdom</span>
                         </p>
                         <p>
                           <KeyboardDoubleArrowRightIcon />
@@ -118,7 +103,13 @@ const About = () => {
                         <InstagramIcon />
                       </span>
                       <span>
-                        <LinkedInIcon />
+                        <FaTiktok />
+                      </span>
+                      <span>
+                        <FaYoutube />
+                      </span>
+                      <span>
+                        <FaDiscord />
                       </span>
                     </div>
                     <div className={styled.Bottons}>
