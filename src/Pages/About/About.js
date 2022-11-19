@@ -52,11 +52,11 @@ const About = () => {
                     <div className={styled.profile}>
                       <img src={women1} alt="women1" />
                       <h5>
-                        I am a actor,songwriter,youtuber,podcaster,I'm open to
-                        try new things as well. I'm so excited to share the
-                        videos/podcast and other I have with you guys!!! Beings
-                        in films/TV shows, sharing music i listen to and writing
-                        is something I very keen On.
+                        I am a actor, songwriter , youtuber , podcaster ,I'm
+                        open to try new things as well. I'm so excited to share
+                        the videos / podcast and other I have with you guys!!!
+                        Beings in films/TV shows, sharing music i listen to and
+                        writing is something I very keen On.
                       </h5>
                     </div>
 

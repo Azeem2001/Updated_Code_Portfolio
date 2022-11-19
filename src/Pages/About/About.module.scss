@@ -157,7 +157,9 @@
           .Icon{
               padding-top: 1rem;
               padding-bottom: 2rem;
-             
+              display: flex;
+              flex-wrap: wrap;
+             gap: 1rem;
               span{
                   margin-left: 1rem !important;     
 
