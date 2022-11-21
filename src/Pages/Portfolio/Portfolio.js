@@ -3,7 +3,7 @@ import React from "react";
 import styled from "./Portfolio.module.scss";
 import { Grid } from "@mui/material";
 import Fade from "react-reveal/Fade";
-import EmailIcon from "@mui/icons-material/Email";
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import { useNavigate } from "react-router-dom";
 import CancelIcon from "@mui/icons-material/Cancel";
 import PortfolioCard from "../../Components/PortfolioCard/PortfolioCard";
@@ -20,11 +20,11 @@ const Portfolio = ({ data }) => {
             <Grid item xl={0.7}>
               <div className={styled.LeftSide}>
                 <div className={styled.Icon}>
-                  <EmailIcon />
+                  <YouTubeIcon />
                 </div>
                 <div className={styled.text}>
                   <h1>
-                    MY <span>PORTFOLIO</span>
+                    MY <span>YOUTUBE</span>
                   </h1>
                 </div>
               </div>
@@ -32,7 +32,7 @@ const Portfolio = ({ data }) => {
             <Grid item xl={11} md={10.5} sm={11.3} xs={11}>
               <div className={styled.RightSide}>
                 <h2>
-                  MY <span>PORTFOLIO</span>
+                  MY <span>YOUTUBE</span>
                 </h2>
                 <div className={styled.CrossButton}>
                   <button onClick={() => navigate("/")}>

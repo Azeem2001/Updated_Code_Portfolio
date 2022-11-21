@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "./ContactMe.module.scss";
-import Fade from "react-reveal/Fade"
+import Fade from "react-reveal/Fade";
 import { Grid } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
@@ -20,16 +20,16 @@ import { height } from "@mui/system";
 import NearMeIcon from "@mui/icons-material/NearMe";
 import { useNavigate } from "react-router-dom";
 import CancelIcon from "@mui/icons-material/Cancel";
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm, ValidationError } from "@formspree/react";
 import { toast } from "react-toastify";
-import RecentActorsIcon from '@mui/icons-material/RecentActors';
+import RecentActorsIcon from "@mui/icons-material/RecentActors";
+import { FaTiktok, FaYoutube, FaDiscord } from "react-icons/fa";
 const ContactMe = () => {
   const women1 = "./images/woman.jpg";
   const navigate = useNavigate();
   const [state, handleSubmit] = useForm("xjvzpdzl");
   if (state.succeeded) {
-    toast.success("your message has been send")
-
+    toast.success("your message has been send");
   }
   return (
     <>
@@ -90,18 +90,37 @@ const ContactMe = () => {
                     </div>
                     <div className={styled.Icon}>
                       <h4>Social Media</h4>
-                      <span>
-                        <FacebookRoundedIcon />
-                      </span>
-                      <span>
-                        <TwitterIcon />
-                      </span>
-                      <span>
-                        <InstagramIcon />
-                      </span>
-                      <span>
-                        <LinkedInIcon />
-                      </span>
+                      <a href="https://www.facebook.com/Safyan-Iqbal-108390497300484">
+                        <span>
+                          <FacebookRoundedIcon />
+                        </span>
+                      </a>
+                      <a>
+                        <span href="https://twitter.com/SAiMedia96">
+                          <TwitterIcon />
+                        </span>
+                      </a>
+
+                      <a href="https://www.instagram.com/saimedia96/">
+                        <span>
+                          <InstagramIcon />
+                        </span>
+                      </a>
+                      <a href="https://www.tiktok.com/@thesafyaniqbal?is_from_webapp=1&sender">
+                        <span>
+                          <FaTiktok />
+                        </span>
+                      </a>
+                      <a href="https://www.youtube.com/channel/UChftk-Nvgr_qGDbePhCk3HA">
+                        <span>
+                          <FaYoutube />
+                        </span>
+                      </a>
+                      <a href="https://discord.com/invite/2Y5dvn95b5">
+                        <span>
+                          <FaDiscord />
+                        </span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -114,40 +133,21 @@ const ContactMe = () => {
                         <p>Want to chat? Send me a message!</p>
                         <div className={styled.FormInput}>
                           <form onSubmit={handleSubmit}>
-                            <label htmlFor="name">
-                              Name
-                            </label>
+                            <label htmlFor="name">Name</label>
                             <br />
-                            <input
-                              id="name"
-                              type="name"
-                              name="name"
-                            />
+                            <input id="name" type="name" name="name" />
                             <br />
-                            <label htmlFor="email">
-                              Email Address
-                            </label>
+                            <label htmlFor="email">Email Address</label>
                             <br />
-                            <input
-                              id="email"
-                              type="email"
-                              name="email"
-                            />
+                            <input id="email" type="email" name="email" />
                             <ValidationError
                               prefix="Email"
                               field="email"
                               errors={state.errors}
                             />
-                            <label>
-
-                            </label>
-                            <label htmlFor="name">
-                              Message
-                            </label>
-                            <textarea
-                              id="message"
-                              name="message"
-                            />
+                            <label></label>
+                            <label htmlFor="name">Message</label>
+                            <textarea id="message" name="message" />
                             <ValidationError
                               prefix="Message"
                               field="message"

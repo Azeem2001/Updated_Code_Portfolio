@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CustomButton from "../Button/CustomButton";
-import styled from "./PortfolioCard.module.scss";
+import styled from "./Sofar.module.scss";
 import { ImgOverlay } from "image-overlay-react";
 import "image-overlay-react/dist/index.css";
 import ReactDOM from "react-dom";
@@ -10,7 +10,7 @@ import { Zoom } from "react-reveal";
 import CancelIcon from "@mui/icons-material/Cancel";
 
 import { style } from "@mui/system";
-const PortfolioCard = ({ data }) => {
+const SofarCard = ({ data }) => {
   const customStyles = {
     content: {
       top: "70%",
@@ -62,32 +62,17 @@ const PortfolioCard = ({ data }) => {
         <button onClick={() => setProductData(seprateCategories("all"))}>
           All
         </button>
-        <button
-          onClick={() => setProductData(seprateCategories("Vlogs"))}
-        >
-          Vlogs
+        <button onClick={() => setProductData(seprateCategories("Event"))}>
+          Events
         </button>
-        <button onClick={() => setProductData(seprateCategories("Skit Comedy"))}>
-          Skit Comedy
-        </button>
-        <button onClick={() => setProductData(seprateCategories("Challenge"))}>
-          Challenge
-        </button>
-        <button
-          onClick={() => setProductData(seprateCategories("Awareness week"))}
-        >
-          Awareness week
-        </button>
-        <button
-          onClick={() => setProductData(seprateCategories("Other"))}
-        >
-          Other
+        <button onClick={() => setProductData(seprateCategories("Course"))}>
+          Course
         </button>
       </div>
       <div className={styled.Images}>
         {productData?.map((item, index) => (
           <>
-            <div className={styled.imgs}>
+            <div className={styled.imgs} key={index}>
               <Zoom>
                 <ImgOverlay
                   imgSrc={item?.fields.image?.fields?.file?.url}
@@ -126,7 +111,7 @@ const PortfolioCard = ({ data }) => {
             </div>
             <img
               className="project_img"
-              src={modaldata?.fields.image?.fields?.file?.url}
+              src={modaldata?.fields?.image?.fields?.file?.url}
             />
             <h1>{modaldata?.fields?.heading}</h1>
             <ul>
@@ -150,4 +135,4 @@ const PortfolioCard = ({ data }) => {
     </div>
   );
 };
-export default PortfolioCard;
+export default SofarCard;
