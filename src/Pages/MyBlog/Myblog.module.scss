@@ -4,7 +4,12 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    overflow-y: scroll;
+    
+    height: 100vh;
+    &::-webkit-scrollbar {
+        display: none;
+      }
      .MyBlog{
        
         width: 80%;

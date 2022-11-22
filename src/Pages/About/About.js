@@ -52,10 +52,10 @@ const About = () => {
                     <div className={styled.profile}>
                       <img src={women1} alt="women1" />
                       <h5>
-                        I am a actor, songwriter , youtuber , podcaster ,I'm
+                        I am an Actor, songwriter , youtuber , podcaster ,I'm
                         open to try new things as well. I'm so excited to share
                         the videos / podcast and other I have with you guys!!!
-                        Beings in films/TV shows, sharing music i listen to and
+                        Beings in films/TV shows, sharing music I listen to and
                         writing is something I very keen On.
                       </h5>
                     </div>
@@ -97,7 +97,7 @@ const About = () => {
                           <FacebookRoundedIcon />
                         </span>
                       </a>
-                      <a href="https://twitter.com/SAiMedia96"  >
+                      <a href="https://twitter.com/SAiMedia96">
                         <span>
                           <TwitterIcon />
                         </span>

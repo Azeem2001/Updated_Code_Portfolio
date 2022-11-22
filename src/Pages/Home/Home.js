@@ -5,7 +5,7 @@ import Card from "../../Components/Cards/Card";
 import Profile from "../../Components/Profile/Profile";
 import { useNavigate } from "react-router-dom";
 import { Zoom } from "react-reveal";
-import { TypeAnimation } from 'react-type-animation';
+import { TypeAnimation } from "react-type-animation";
 
 const Home = ({ title, disc }) => {
   const navigate = useNavigate();
@@ -22,24 +22,22 @@ const Home = ({ title, disc }) => {
                     <h1>SAFYAN IQBAL</h1>
                     {/* <h2>BLOGGER</h2> */}
                     <TypeAnimation
-      sequence={[
-        'ACTOR', 
-        1000,
-        'SONG WRITTER', 
-        2000, 
-        'YOUTUBER', 
-        2000, 
-        'PODCASTER', 
-        
-        () => {
-          console.log('Done typing!'); 
-        }
-      ]}
-      wrapper="h2"
-      cursor={true}
-      repeat={Infinity}
-      style={{ fontSize: '2em' }}
-    />
+                      sequence={[
+                        "ACTOR",
+                        1000,
+                        "SONG WRITTER",
+                        2000,
+                        "YOUTUBER",
+                        2000,
+                        "PODCASTER",
+
+                        () => {},
+                      ]}
+                      wrapper="h2"
+                      cursor={true}
+                      repeat={Infinity}
+                      style={{ fontSize: "2em" }}
+                    />
                   </div>
                 </Zoom>
               </Grid>
@@ -69,7 +67,6 @@ const Home = ({ title, disc }) => {
                 </div>
               </Grid>
             </Grid>
-            
           </div>
         </div>
       </div>

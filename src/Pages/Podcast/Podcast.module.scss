@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+.ContactMeContainer{
+    margin-top: 1rem;
+    color: #FFFFFF;
+    // width: 100%;
+    font-family: "lato",sans-serif;
+    flex-flow: nowrap;
+
+    .css-11lq3yg-MuiGrid-root{
+        flex-wrap: nowrap !important;
+    }
+    .LeftSide svg{
+        font-size: 3.5rem ;
+        fill: #FA709A;
+    }
+    
+    .LeftSide{
+        max-height:100% ;
+        height: 94vh;
+        overflow: hidden;
+         .Icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+        .text{
+            height: 100%;
+            background:#333333 ;
+            box-shadow: 1px -2px 33px 3px rgba(64, 60, 60, 0.75) inset;
+            -webkit-box-shadow: 1px -2px 33px 3px rgba(95, 91, 91, 0.75) inset;
+            -moz-box-shadow: 1px -2px 33px 3px rgba(84, 80, 80, 0.75) inset;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h1{
+                writing-mode: vertical-lr;
+                word-spacing: 10px;
+                letter-spacing: 1rem;
+                font-size: 1.5rem;
+
+
+                span{
+                    color: #FA709A;
+                }
+            }
+        }
+        
+    }
+    .RightSide::-webkit-scrollbar {
+        display: none;
+    }
+    .RightSide{
+        // scrollbar-gutter: none;
+        margin-left: 2rem;
+        overflow-x: hidden;
+        // overflow-y: scroll;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+
+        
+        height: 94vh;
+        .PersonalData{
+            h3{
+               font-size: 1.5rem;
+               line-height: 0.2rem;
+           }
+           .Border{
+               border-bottom: 3px solid #FA709A ;
+               width: 50px;
+               border-radius: 8px;
+           }
+           .Projects{
+                padding: 2rem 4rem 2rem 3rem;
+                box-shadow: 1px -2px 33px 3px rgba(64, 60, 60, 0.75) inset;
+                -webkit-box-shadow: 1px -2px 33px 3px rgba(95, 91, 91, 0.75) inset;
+                -moz-box-shadow: 1px -2px 33px 3px rgba(84, 80, 80, 0.75) inset;
+                border-radius: 8px;
+           }
+        }
+        @media only screen and (max-width: 768px) {
+          .PersonalData{
+            .Projects{
+                padding: 3rem 1rem 0rem 1rem !important;
+
+            }
+          }
+        }
+        .CrossButton{
+            position: absolute;
+            right: 2rem;
+            top: 2rem;
+            button svg{
+                fill: #FFF;
+                font-size: 2.5rem;
+            }
+            button{
+                border-radius: 50%;
+                background-color: transparent;
+                
+                border: none;
+                
+            }
+        }
+        
+        h2{
+           text-align: center;
+           font-weight: 900;
+           font-size: 2.75rem;
+            span{
+                color: #FA709A;
+            }
+        }
+       
+
+    }
+}
+@media only screen and (max-width:1024px) {
+     
+    .profile{
+        img{
+             display: block  !important;
+        }
+        h5{
+        padding-left: 1.5rem !important;
+        }
+       
+    }
+    
+}
+@media only screen and (max-width:768px) {
+    
+    .Bottons{
+        display: block !important;
+        div{
+          margin-top: 0.8rem;
+        }
+    }
+    .LeftSide svg{
+     font-size: 2.2rem !important ;
+ 
+    }
+    .LeftSide{
+        .Icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text{
+            h1{
+                margin: 4px;
+            }
+        }
+    }
+    .RightSide{
+        margin-left: 0.5rem !important;
+       
+        width: 100%;  
+        h2{
+            font-size: 1.8rem !important;
+            margin-top: 3.5rem;
+            
+        }
+        h3{
+            font-size: 1.2rem !important;
+        }
+        .CrossButton{
+            right: 0.5em !important;
+            top: 0.2rem !important;
+            button svg{
+                
+                font-size: 2rem !important;
+            }
+        }
+       
+           
+    }
+  
+   .serviceContent{
+    padding: 3rem 1rem 0rem 1rem !important;
+   }
+   
+    
+  
+
+}

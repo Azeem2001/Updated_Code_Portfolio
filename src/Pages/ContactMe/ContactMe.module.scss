@@ -24,7 +24,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-         }
+                   }
         .text{
             height: 100%;
             background:#333333 ;
@@ -85,7 +85,7 @@
            font-weight: 900;
            font-size: 2.75rem;
             span{
-                color: #07FFF7;
+                color: #FA709A;
             }
         }
         .PersonalData{
@@ -140,7 +140,7 @@
                     align-items: center;
                     
                     h4{
-                        color: #07FFF7;
+                        color: #FA709A;
                         font-weight: 400;
                     }
                    
@@ -159,14 +159,19 @@
                 padding: 0.5rem;
                 border-radius: 50%;
                 background: #fff;
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
       
               }
               .Icon{
                    
-                  padding-top: 1rem;
+                padding-top: 1rem;
+                
+               
                   h4{
-                    color: #07FFF7;
+                    color: #FA709A;
                     font-weight: 400;
+                    display: block !important;
                 }
                   span{
                       margin-left: 1rem !important;     

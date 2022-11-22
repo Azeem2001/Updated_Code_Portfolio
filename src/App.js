@@ -13,6 +13,7 @@ import { auth, onAuthStateChanged, getDoc, doc, db } from "./firebase";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import { client } from "./client";
 import Sofar from "./Pages/Sofar/Sofar";
+import Podcast from "./Pages/Podcast/Podcast";
 
 function App({ none }) {
   let location = window.location.pathname;
@@ -22,11 +23,12 @@ function App({ none }) {
   useEffect(() => {}, [location]);
   const handleSaparater = (data, value) => {
     let filteredData = data?.filter(
-      (item) => item?.sys?.contentType?.sys?.id === value
+      (item) =>
+        item?.sys?.contentType?.sys?.id?.toLowerCase() === value.toLowerCase()
     );
+
     return filteredData;
   };
-
   useEffect(() => {
     client.getEntries().then(({ items }) => {
       setAllData({
@@ -34,10 +36,10 @@ function App({ none }) {
         blog: handleSaparater(items, "blogs"),
         product: handleSaparater(items, "product"),
         sofar: handleSaparater(items, "sofar"),
+        podcast: handleSaparater(items, "podCast"),
       });
     });
   }, []);
-  console.log(allData.sofar);
   onAuthStateChanged(auth, async (user) => {
     if (user) {
       const uid = user.uid;
@@ -49,7 +51,6 @@ function App({ none }) {
       setUser(data);
       localStorage.setItem("user", JSON.stringify(data));
     } else {
-      console.log("user not authenticated");
       localStorage.removeItem("user");
     }
   });
@@ -118,14 +119,7 @@ function App({ none }) {
               </Wrapper>
             }
           />
-          <Route
-            path="/portfolio"
-            element={
-              <Wrapper>
-                <Portfolio data={allData?.product} />
-              </Wrapper>
-            }
-          />
+
           <Route
             path="/sofar"
             element={
@@ -133,6 +127,10 @@ function App({ none }) {
                 <Sofar data={allData?.sofar} />
               </Wrapper>
             }
+          />
+          <Route
+            path="/podcast"
+            element={<Wrapper>{<Podcast data={allData?.podcast} />}</Wrapper>}
           />
 
           {!auth?.currentUser?.uid && (

@@ -4,10 +4,8 @@
     // width: 32%;
     
 }
-.overflow{
- min-height: 95vh;
- height: 100%;
- overflow: auto;
+.MuiGrid-container{
+  overflow: hidden !important;
 }
 .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
     background: #fff !important;
