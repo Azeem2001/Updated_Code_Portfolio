@@ -64,29 +64,13 @@ const ContactMe = () => {
                   <div className={styled.content}>
                     <div className={styled.PersonalInfo}>
                       <div className={styled.InfoLeft}>
-                        <h4>Address</h4>
-                        <p>
-                          <LocationOnIcon />
-                          <span>Silicon Valley, USA</span>
-                        </p>
-                        <h4>Email</h4>
-                        <p>
-                          <EmailIcon />
-                          <span>you@yourwebsite.com</span>
-                        </p>
-                      </div>
-                      <div className={styled.InfoRight}>
-                        <h4>Phone</h4>
-                        <p>
-                          <StayPrimaryPortraitIcon />
-                          <span>+76 21 19 34 20</span>
-                        </p>
                         <h4>Website</h4>
                         <p>
                           <LanguageIcon />
                           <span>www.yourwebsite.com</span>
                         </p>
                       </div>
+                      <div className={styled.InfoRight}></div>
                     </div>
                     <div className={styled.Icon}>
                       <h4>Social Media</h4>

@@ -8,15 +8,17 @@ import Modal from "react-modal";
 import Typography from "@mui/material/Typography";
 import { Zoom } from "react-reveal";
 import CancelIcon from "@mui/icons-material/Cancel";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 import { style } from "@mui/system";
 const SofarCard = ({ data }) => {
   const customStyles = {
     content: {
-      top: "70%",
+      top: "50%",
       left: "50%",
       background: "#fff",
-      marginTop: "5rem",
+      marginTop: "3rem",
+      height: "calc(100vh - 8rem)",
       width: "50%",
       right: "auto",
       bottom: "auto",
@@ -55,7 +57,6 @@ const SofarCard = ({ data }) => {
     );
     return filteredCaterogies;
   };
-  // useEffect(() => seprateCategories(), [])
   return (
     <div className={styled.CardContainer}>
       <div className={styled.Buttons}>
@@ -80,7 +81,7 @@ const SofarCard = ({ data }) => {
                   position="top"
                   width="50%"
                   paddingBottom="1rem"
-                  height="100%"
+                  height="20rem"
                   fColor="gray"
                 >
                   <div className={styled.ViewStory}>
@@ -113,22 +114,31 @@ const SofarCard = ({ data }) => {
               className="project_img"
               src={modaldata?.fields?.image?.fields?.file?.url}
             />
-            <h1>{modaldata?.fields?.heading}</h1>
+            <h2>{modaldata?.fields?.heading}</h2>
             <ul>
-              <li>
-                <strong>Client : </strong>
-                {modaldata?.fields?.client}
-              </li>
-              <li>
-                <strong>Date :</strong>
-                {modaldata?.fields?.date.slice(0, 10)}
-              </li>
+              {modaldata?.fields?.client && (
+                <li>
+                  <strong>Client : </strong>
+                  {modaldata?.fields?.client}
+                </li>
+              )}
+              {modaldata?.fields?.date && (
+                <li>
+                  <strong>Date :</strong>
+                  {modaldata?.fields?.date.slice(0, 10)}
+                </li>
+              )}
               <li>
                 <strong>Categories :</strong>
                 {modaldata?.fields?.categories}
               </li>
             </ul>
-            <p>{modaldata?.fields?.discription}</p>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: modaldata?.fields?.discription,
+              }}
+            />
+            {/* <div> {modaldata?.fields?.discription}</div> */}
           </div>
         </Modal>
       </div>
