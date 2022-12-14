@@ -138,7 +138,6 @@ const SofarCard = ({ data }) => {
                 __html: modaldata?.fields?.discription,
               }}
             />
-            {/* <div> {modaldata?.fields?.discription}</div> */}
           </div>
         </Modal>
       </div>

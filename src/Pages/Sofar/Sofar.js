@@ -24,7 +24,7 @@ const Sofar = ({ data }) => {
                 </div>
                 <div className={styled.text}>
                   <h1>
-                    MY <span>SOFAR</span>
+                    MY <span>SO FAR</span>
                   </h1>
                 </div>
               </div>
@@ -32,7 +32,7 @@ const Sofar = ({ data }) => {
             <Grid item xl={11} md={10.5} sm={11.3} xs={11}>
               <div className={styled.RightSide}>
                 <h2>
-                  MY <span>SOFAR</span>
+                  MY <span>SO FAR</span>
                 </h2>
                 <div className={styled.CrossButton}>
                   <button onClick={() => navigate("/")}>
