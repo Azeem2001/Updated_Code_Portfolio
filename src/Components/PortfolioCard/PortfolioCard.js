@@ -99,7 +99,7 @@ const PortfolioCard = ({ data }) => {
                   <div className={styled.ViewStory}>
                     <div className={styled.btnWrapper}>
                       <button onClick={() => openModal(item)}>
-                        View <span>Story</span>
+                        View <span>More</span>
                       </button>
                     </div>
                     <small>{item?.fields?.heading}</small>

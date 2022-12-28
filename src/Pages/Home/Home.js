@@ -14,8 +14,8 @@ const Home = ({ title, disc }) => {
       <div className={styled.HomeItem}>
         <div className={styled.RightSide}>
           <div className={styled.Cards}>
-            <Grid container spacing={1}>
-              <Grid padding={1} item xl={6} lg={6} md={6} sm={12} xs={12}>
+            <Grid container spacing={1} paddingLeft="14px">
+              <Grid padding={2} item xl={6} lg={6} md={6} sm={12} xs={12}>
                 <Zoom>
                   <div className={styled.PersonalInfo}>
                     <h3>HI THERE ! I'M</h3>

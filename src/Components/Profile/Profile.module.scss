@@ -2,11 +2,14 @@
      display: flex;
      justify-content: center;
      align-items: center;
-
+   flex-wrap: nowrap;
+  
     img{
       height:calc(92vh + 13px);  
-      width: 100%;     
-    }
+      width: 100%;   
+      min-width:410px ;  
+      transform: translateX(10px);
+   }
    }
    
 
@@ -19,4 +22,15 @@
       }
 
   }       
+  @media only screen and (max-width:1300px){
+    
+   .LeftSide{
+      img{
+      transform: translateX(-15px);
+      margin-left: 1rem;  
+      }
+   }
+
+}       
+
    
