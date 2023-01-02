@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap');
+
 .ResumeContainer{
 
     margin-top: 1rem;
     color: #FFFFFF;
     width: 100%;
-    font-family: "lato",sans-serif;
     
     .LeftSide svg{
         font-size: 3.5rem ;
@@ -28,7 +29,8 @@
                 word-spacing: 10px;
                 letter-spacing: 1rem;
                 font-size: 1.5rem;
-
+                font-weight: 200;
+                 font-family: "Eth-regular"; 
 
                 span{
                     color: #F6D365;
@@ -69,8 +71,10 @@
 
         h2{
             text-align: center;
-            font-weight: 900;
+            font-weight: 400;
             font-size: 2.75rem;
+            font-family: "Eth-regular"; 
+
              span{
                  color: #F6D365;
              }
@@ -78,6 +82,8 @@
          .SkillContainer{
             h3{
                 font-size: 1.5rem;
+                font-family: "Eth-regular"; 
+
             }
             .Border{
                 border-bottom: 3px solid #F6D365 ;
@@ -102,6 +108,8 @@
             // height: 90vh;
             h3{
                 font-size: 1.5rem;
+                font-family: "Eth-regular"; 
+                font-weight: 200;
             }
             .Border{
                 border-bottom: 3px solid #F6D365 ;
@@ -124,6 +132,8 @@
         .ExperienceContainer{
             h3{
                 font-size: 1.5rem;
+                font-family: "Eth-regular"; 
+                font-weight: 200;
             }
             .Border{
                 border-bottom: 3px solid #F6D365 ;
@@ -145,6 +155,8 @@
         .FunFact{
             h3{
                 font-size: 1.5rem;
+                font-family: "Eth-regular"; 
+                font-weight: 200;
             }
             .Border{
                 border-bottom: 3px solid #F6D365 ;
@@ -173,9 +185,13 @@
                       
                     h1{
                         font-size: 3.5rem;
+                        font-family: "Eth-regular"; 
+                        font-weight: 200;
                     }
                     p svg{
                         font-size: 1.5rem;
+                        font-family: 'Advent Pro', sans-serif;
+
                     }
                     p{
                         strong{

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap');
+
 .CardContainer{
     .Buttons{
         display: flex;
@@ -13,7 +15,9 @@
             background: transparent;
             color: #ffff;
             border: none;
-        
+            font-family: 'Advent Pro', sans-serif;
+            font-weight: 500;
+           font-size: 20px;
          &:focus{
           border: 1px solid #ffff;
          }
@@ -90,6 +94,7 @@
                     padding: 0.5rem 1rem;
                     border:1px solid #FFF;
                     border-radius: 5px;
+                    font-family: 'Advent Pro', sans-serif;
 
                     &:hover{
                         background: rgba(0,0,0,0.5);
@@ -98,6 +103,8 @@
                    span{
                         color: aqua;
                         padding-left: 0.4rem;
+                    border-radius: 5px;
+
                     }
     
                 }
@@ -111,6 +118,8 @@
                 padding-bottom: 2rem;
                 padding-right: 1rem;
                 color: aqua;
+        font-family: 'Advent Pro', sans-serif;
+
                
             }
             @media only screen and (max-width: 600px) {
@@ -123,9 +132,13 @@
                 }
                 button{
                  font-size: 1rem !important;
+                 font-family: 'Advent Pro', sans-serif;
+
                 }
               small{
                 font-size: 1rem !important;
+                font-family: 'Advent Pro', sans-serif;
+
               }
             }
         }
@@ -169,3 +182,6 @@
 
 }
 
+h2{
+    font-family: "Eth-regular" !important;
+}

@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap');
 
 
 .ContactMeContainer{
     margin-top: 1rem;
     color: #FFFFFF;
     // width: 100%;
-    font-family: "lato",sans-serif;
+    font-family: 'Advent Pro', sans-serif;
     flex-flow: nowrap;
 
     .css-11lq3yg-MuiGrid-root{
@@ -40,8 +40,9 @@
                 word-spacing: 10px;
                 letter-spacing: 1rem;
                 font-size: 1.5rem;
-
-
+                font-weight: 200;
+                font-family: "Eth-regular";
+          
                 span{
                     color: #FA709A;
                 }
@@ -82,8 +83,9 @@
         
         h2{
            text-align: center;
-           font-weight: 900;
            font-size: 2.75rem;
+           font-weight: 200;
+                font-family: "Eth-regular";
             span{
                 color: #FA709A;
             }
@@ -91,6 +93,8 @@
         .PersonalData{
              h3{
                 font-size: 1.5rem;
+                font-weight: 200;
+                font-family: "Eth-regular";
             }
             .Border{
                 border-bottom: 3px solid #FA709A ;

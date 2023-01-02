@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap');
 .HomeContainer{
   width: 100%;
   margin: 0;
@@ -18,31 +17,34 @@
          .Cards{
             color: #fff;
             .PersonalInfo{
-               font-family: 'Lato', sans-serif;  
-               display: flex;
+              font-family: "Eth-regular";
+              display: flex;
                justify-content: center;
                align-items: center;
                flex-direction: column;
                height: 100%;    
                h3{
-                  font-size: 1.5rem;
-                  font-weight: 500;
+                  font-size: 1.2rem;
+                  font-weight: 300;
                   margin-bottom: 0;
                 }
                 h1{
-                  font-size: 3rem;
+                  font-size: 2.5rem;
                   font-weight: 900;
                   margin-top: 0.5rem;
                  margin-bottom: 0; 
-
+                 text-align: center;
+                 font-family: "Eth-regular";
+                 font-weight: 400;
                
                }
 
                 h2{
-                  font-size: 2rem;
+                  font-size: 1.1rem;
                   margin-top: 0.5rem;
-                  font-weight: 800;
+                  font-weight: 300;
                   color: #ffb400;
+
                 }
             }
          }

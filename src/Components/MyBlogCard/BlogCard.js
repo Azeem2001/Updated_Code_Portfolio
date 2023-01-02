@@ -8,7 +8,7 @@ import AddLinkIcon from "@mui/icons-material/AddLink";
 import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../../firebase";
-const BlogCard = ({ article,setIsComment }) => {
+const BlogCard = ({ article, setIsComment }) => {
   const { blogHeading, blogImage, blogContent } = article?.fields;
   let text = blogContent;
   const [isReadMore, setIsReadMore] = useState(true);
@@ -20,7 +20,7 @@ const BlogCard = ({ article,setIsComment }) => {
   //    if(!auth?.currentUser?.uid) {
   //     localStorage.setItem("redirectUrl", "/myblog" )
   //     navigate("/login")
-  //   } 
+  //   }
   //    console.log("hello")
   //    setIsComment(true)
   //  }
@@ -32,20 +32,24 @@ const BlogCard = ({ article,setIsComment }) => {
           {blogImage ? (
             <img src={blogImage?.fields?.file?.url} alt={blogHeading} />
           ) : null}
-           <p className="text">
-       {isReadMore ? text.slice(0, 250) : text}
-       <span onClick={toggleReadMore}>
-        {isReadMore ?  <div className={styled.Btns} >
-            <CustomButton title={"Read"} item={"More"} />
-          </div> :   <div className={styled.Btns}>
-            <CustomButton title={"Read"} item={"Less"} />
-          </div>}
-       </span>
-      </p>
+          <p className="text">
+            {isReadMore ? text.slice(0, 250) : text}
+            <span onClick={toggleReadMore}>
+              {isReadMore ? (
+                <div className={styled.Btns}>
+                  <CustomButton title={"Read"} item={"More"} />
+                </div>
+              ) : (
+                <div className={styled.Btns}>
+                  <CustomButton title={"Read"} item={"Less"} />
+                </div>
+              )}
+            </span>
+          </p>
           {/* <p>{refactortext}
         
           </p> */}
-          
+
           <div className={styled.footer}>
             <div className={styled.footerItem}>
               <p>
@@ -62,10 +66,9 @@ const BlogCard = ({ article,setIsComment }) => {
               </p>
               <p>
                 <AddLinkIcon /> <span>permalink</span>
-
               </p>
               <div className={styled.btn}>
-              {/* <CustomButton title={"Comments"} onClick={HandleComments} /> */}
+                {/* <CustomButton title={"Comments"} onClick={HandleComments} /> */}
               </div>
             </div>
           </div>

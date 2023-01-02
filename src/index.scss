@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap');
+
 body{
     background-color: #222222;
     overflow:hidden ;
@@ -77,6 +79,8 @@ code {
       }
       p{
         text-align: justify;
+        font-family: 'Advent Pro', sans-serif;
+
       }
     }
     }
@@ -138,24 +142,27 @@ code {
           font-weight: 600;
           font-family: sans-serif;
           color: #080809;
+          font-family:"Eth-regular";
+
          }
          h3{
           font-size: 1.1rem !important;
           color: #212459;
           line-height: 1.5rem;
           font-weight: 300;
-          font-family: sans-serif;
-         }
+          font-family: 'Advent Pro', sans-serif;
+        }
 
         
          ul{
           padding-left: 0;
           li{
             list-style: none;
+            font-family: "Eth-regular";
 
             color: #212459;
             font-weight: 500;
-            font-family: sans-serif;
+            // font-family: sans-serif;
             line-height: 1.5rem;
 
             strong{
@@ -172,7 +179,6 @@ code {
           color: #212459;
           line-height: 1.5rem;
           font-weight: 300;
-          font-family: sans-serif;
         }
         @media screen and (max-width: 600px) {
           .project_img{

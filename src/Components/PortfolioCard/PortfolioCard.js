@@ -145,7 +145,8 @@ const PortfolioCard = ({ data }) => {
                 {modaldata?.fields?.categories}
               </li>
             </ul>
-            <div
+            <div 
+              className={styled.fontFamily}
               dangerouslySetInnerHTML={{
                 __html: modaldata?.fields?.discription,
               }}

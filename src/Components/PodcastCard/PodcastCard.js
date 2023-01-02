@@ -134,6 +134,7 @@ const PodcastCard = ({ data }) => {
               </li>
             </ul>
             <div
+             className={styled.textArea}
               dangerouslySetInnerHTML={{
                 __html: modaldata?.fields?.discription,
               }}

@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import styled from "./Rigester.module.scss"
+import styled from "./Rigester.module.scss";
 import { toast } from "react-toastify";
 
 import {
@@ -9,7 +9,8 @@ import {
   createUserWithEmailAndPassword,
   setDoc,
   doc,
-  db, getDoc
+  db,
+  getDoc,
 } from "../../firebase";
 import CustomButton from "../../Components/Button/CustomButton";
 const Rigester = () => {
@@ -28,25 +29,24 @@ const Rigester = () => {
   };
   const getCurrentUser = async (uid) => {
     try {
-      const res = doc(db, "user", uid)
-      const getData = await getDoc(res)
+      const res = doc(db, "user", uid);
+      const getData = await getDoc(res);
       return {
-        ...getData?.data()
-      }
+        ...getData?.data(),
+      };
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
-  }
+  };
   const postData = async () => {
     if (UserInfo.name === "") {
-      toast.warn(`name is not defined`)
+      toast.warn(`name is not defined`);
     } else if (UserInfo.email === "") {
-      toast.warn(`email is not defined`)
+      toast.warn(`email is not defined`);
     } else if (UserInfo.password === "") {
-      toast.warn(`password is not defined`)
+      toast.warn(`password is not defined`);
     } else {
-      navigate("/myblog")
-
+      navigate("/myblog");
     }
     try {
       const { user } = await createUserWithEmailAndPassword(
@@ -60,13 +60,13 @@ const Rigester = () => {
         name: UserInfo.name,
       });
       let data = {
-        ...await getCurrentUser(user?.uid),
-        uid: user?.uid
-      }
-      localStorage.setItem("user", JSON.stringify(data))
-      let newUser = JSON.parse(localStorage.getItem("user"))
+        ...(await getCurrentUser(user?.uid)),
+        uid: user?.uid,
+      };
+      localStorage.setItem("user", JSON.stringify(data));
+      let newUser = JSON.parse(localStorage.getItem("user"));
       if (newUser?.uid) {
-        navigate("/myblog")
+        navigate("/myblog");
       }
     } catch (error) {
       console.log(error);
@@ -74,52 +74,54 @@ const Rigester = () => {
   };
 
   return (
-    <div className={styled.RigesterContainer}>
-      <div className={styled.container}>
-        <br />
-        <br />
-        <input
-          width={"100%"}
-          type="text"
-          placeholder="Enter Your Name"
-          value={UserInfo.name}
-          autoComplete="off"
-          name="name"
-          required
-          onChange={getUserData}
-        />
-        <br />
-        <br />
+    <>
+      <div className={styled.RigesterContainer}>
+        <h1 className={styled.heading}>Rigester</h1>
 
-        <input
-          type="email"
-          placeholder="Enter Your Email"
-          value={UserInfo.email}
-          name="email"
-          autoComplete="off"
-          required
-          onChange={getUserData}
-        />
-        <br />
-        <br />
+        <div className={styled.container}>
+          <br />
+          <br />
+          <input
+            width={"100%"}
+            type="text"
+            placeholder="Enter Your Name"
+            value={UserInfo.name}
+            autoComplete="off"
+            name="name"
+            required
+            onChange={getUserData}
+          />
+          <br />
+          <br />
 
-        <input
-          type="password"
-          placeholder="Enter Your Password"
-          value={UserInfo.password}
-          autoComplete="off"
-          required
-          name="password"
-          onChange={getUserData}
-        />
-        <br />
+          <input
+            type="email"
+            placeholder="Enter Your Email"
+            value={UserInfo.email}
+            name="email"
+            autoComplete="off"
+            required
+            onChange={getUserData}
+          />
+          <br />
+          <br />
 
-        <br />
-        <CustomButton title={"Rigester"} onClick={postData} />
+          <input
+            type="password"
+            placeholder="Enter Your Password"
+            value={UserInfo.password}
+            autoComplete="off"
+            required
+            name="password"
+            onChange={getUserData}
+          />
+          <br />
 
+          <br />
+          <CustomButton title={"Rigester"} onClick={postData} />
+        </div>
       </div>
-
-    </div>
+    </>
   );
 };
 
